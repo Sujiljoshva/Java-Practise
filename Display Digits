@@ -1,0 +1,16 @@
+import java.lang.*;
+import java.util.*;
+class DisplayDigits{
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a number to display its digits: ");
+      long n=sc.nextLong();
+      while(n>0){
+          long r=(n%10);
+          n=n/10;
+          System.out.println("The Digits are "+r);
+      }
+      System.out.println("You number is "+n);
+      
+    }
+}
