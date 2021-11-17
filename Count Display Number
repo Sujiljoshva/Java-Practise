@@ -1,0 +1,18 @@
+import java.lang.*;
+import java.util.*;
+class CountDisplayDigits{
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a number to display its digits: ");
+      long n=sc.nextLong();
+      int z=0;
+      while(n>0){
+          long r=(n%10);
+          n=n/10;
+          z=z+1;
+          System.out.println("The Digits are "+r);
+      }
+      System.out.println("You count number is "+z);
+      
+    }
+}
