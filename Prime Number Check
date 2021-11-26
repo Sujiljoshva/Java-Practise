@@ -1,0 +1,28 @@
+import java.lang.*;
+import java.util.*;
+public class PrimeNumber{
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number to check its a Prime Number: ");
+		int n=sc.nextInt();
+		
+		int temp=n;
+		int rem=1;
+		int count=0;
+			
+		for(int i=1;i<=(n/2);i++) {
+			rem=temp%i;
+			if(rem==0) {
+				count++;
+			}
+		}
+		System.out.println("The number of factors for the given Number is "+count);
+		    if(count==1) {
+		    	System.out.println("The Given number is a Prime Number:");
+		    	
+		    }else {
+		    	System.out.println("The Given number is not a Prime Number:");
+		    }
+	}
+	
+}
