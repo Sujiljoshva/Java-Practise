@@ -1,0 +1,18 @@
+package ReverseArray;
+public class Discount{
+	static double discount(double...P) {
+		double sum=0;
+		for(int i=0;i<P.length;i++)
+			sum=sum+P[i];
+		if(sum<500) sum=sum*0.10;
+		else if(sum>500 && sum <1000) sum =sum*0.15;
+		else sum=sum*0.20;
+		System.out.println(sum);
+		return sum;
+	}
+	
+	 
+	public static void main(String args[]) {
+		System.out.println("The Discount for given price is "+discount(5214,7454,121));
+	}
+}
